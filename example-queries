@@ -1,0 +1,21 @@
+Query | API call
+--- | ---
+Look up a clinical finding concept | https://nzhts.digital.health.nz/fhir/CodeSystem/$lookup?system=http://snomed.info/sct&code=404684003
+Look up a procedure concept | https://nzhts.digital.health.nz/fhir/CodeSystem/$lookup?system=http://snomed.info/sct&code=427623005
+Look up a medicinal product concept to display certain properties | https://nzhts.digital.health.nz/fhir/CodeSystem/$lookup?system=http://snomed.info/sct&code=322236009&property=normalForm&property=sufficientlyDefined
+Check if one concept subsumes another | https://nzhts.digital.health.nz/fhir/CodeSystem/$subsumes?system=http://snomed.info/sct&codeA=50043002&codeB=195967001
+Check if one concept is subsumed by another | https://nzhts.digital.health.nz/fhir/CodeSystem/$subsumes?system=http://snomed.info/sct&codeA=195967001&codeB=50043002
+Expand an intensionally defined value set using expression constraint language (ECL) | https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/<<27624003&count=20
+Respiratory disorders due to allergic reaction caused by pollen (ECL) | https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/< 50043002 |Disorder of respiratory system (disorder)| : << 42752001 |Due to (attribute)| = << 418364006 |Allergic reaction caused by pollen (disorder)|
+Medicinal products containing caffeine | https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/< 763158003 |Medicinal product (product)| : << 127489000 |Has active ingredient (attribute)| = << 255641001 |Caffeine (substance)|
+Expand an intensionally defined value set using the is-a relationship | https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=isa/27624003&count=20
+Filter an ECL value set on a clinical term | https://snomednz.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/<< 763158003&filter=aspirin
+Validate a code against an implicit value set, also checking the display term | https:/nzhts.digital.health.nz/fhir/ValueSet/$validate-code?url=http://snomed.info/sct?fhir_vs=ecl/<< 34014006&code=840539006&display=COVID-19
+List all SNOMED concepts mapped to ICD-O | https://snomednz.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/^446608001&count=20
+List all New Zealand simple reference sets | https://nzhts.digital.health.nz/MAIN/SNOMEDCT-NZ/concepts?ecl=< 50501000210100
+List the emergency department chief presenting complaint reference set | https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct/21000210109?fhir_vs=refset/71000210108&count=10
+List the emergency department diagnosis reference set | https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct/21000210109?fhir_vs=refset/61000210102&count=10
+List the emergency department procedure reference set | https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct/21000210109?fhir_vs=refset/321000210102&count=10
+List the smoking status reference set | https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct/21000210109?fhir_vs=refset/72741000210106
+List the smoking intervention reference set | https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct/21000210109?fhir_vs=refset/72731000210103
+List the vaping status reference set | https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct/21000210109?fhir_vs=refset/72721000210100
