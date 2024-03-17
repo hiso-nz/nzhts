@@ -11,6 +11,8 @@ This repository is a comprehensive resource for developers and users working wit
 ## Getting Started
 To explore the API examples, simply browse through the repository. Each example is documented to help you understand its purpose and how to implement it.
 
+## Making your first API call
+To explore how to make your first API call with NZHTS API, please refer to [Using postman with Oauth 2.0 Client Credentials](./Integration%20Guides/Using%20postman%20with%20Oauth%202.0%20Client%20Credentials.md)
 ## Contributing
 Contributions are welcome! If you have an example or improvement to share, please fork the repository, add your contribution, and submit a pull request.
 
