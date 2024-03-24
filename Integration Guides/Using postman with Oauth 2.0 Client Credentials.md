@@ -13,7 +13,9 @@ This document will give you a step by step guidence on making your first API req
 
 * Select "HTTP" to create a new request.
 * In the new request tab, enter the API endpoint you wish to call in the URL field, e.g.  https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/<73211009
-and select "Get" as your API operation method.
+
+
+    and select "Get" as your API operation method.
 
 **2.** Set Up OAuth 2.0
 *	In your newly created request, go to the "Authorization" tab.
