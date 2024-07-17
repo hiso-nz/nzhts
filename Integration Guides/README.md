@@ -4,7 +4,7 @@ This document will give you a step by step guidence on making your first API req
 ## Prerequisites
 * Postman: Ensure you have Postman installed.
 
-* Client Credentials: You need to have your client_id and client_secret ready.
+* Client Credentials: You need to have your client_id, client_secret and access token URL ready.
 
 ## Step-by-Step Guide
 **1.**  Create a New Request
@@ -12,7 +12,7 @@ This document will give you a step by step guidence on making your first API req
 * Open Postman and click the "New" button.
 
 * Select "HTTP" to create a new request.
-* In the new request tab, enter the API endpoint you wish to call in the URL field, e.g.  https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/<73211009
+* In the new request tab, enter the API query you wish to call in the URL field, e.g. to view the codes in the New Zealand emergency care procedure reference set: https://nzhts.digital.health.nz/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=refset/321000210102
 
 
     and select "Get" as your API operation method.
@@ -26,7 +26,7 @@ This document will give you a step by step guidence on making your first API req
 A dialog will appear for you to input your OAuth 2.0 credentials.
 *	Token Name: Enter a name for your token.
 *	Grant Type: Select "Client Credentials" from the dropdown.
-*	Access Token URL: Input the URL https://authenticate.nzhts.digital.health.nz/auth/realms/nzhts/protocol/openid-connect/token
+*	Access Token URL: Enter the access token URL.
 *	Client ID: Enter your client_id.
 *	Client Secret: Enter your client_secret.
 *	Client Authentication: Select "Send as Basic Auth header"
