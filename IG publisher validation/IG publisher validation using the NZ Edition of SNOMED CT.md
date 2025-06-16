@@ -20,9 +20,9 @@ In short, you need to:
 
 #### 1. Add NZHTS to your `fhir-settings.json`
 
-As NZHTS uses authentication, you will need to setup your fhir-settings.json file with a token to allow NZHTS to be used for validation. The fhir-settings.json file is used to configure some aspects of the FHIR java tools such as the IG Publisher and CLI validator. 
+As NZHTS uses authentication, you will need to setup your `fhir-settings.json` file with a token to allow NZHTS to be used for validation. The `fhir-settings.json` file is used to configure some aspects of the FHIR java tools such as the IG Publisher and CLI validator. 
 
-Some of these settings are normally set by environment variables used by tool installers as well as manually set environment variables (e.g. system path). but the fhir-settings.json file can provide a definitive setting. By default FHIR Java Tools use several public servers to perform specific tasks like providing terminology services, FHIR package downloads, etc. Users wishing to use other servers, including privately accessible servers, can add entries to the servers list here. 
+By default FHIR Java Tools use several public servers to perform specific tasks like providing terminology services, FHIR package downloads, etc. Users wishing to use other servers, including privately accessible servers and alternate package or terminology servers can add entries to the servers list in their `fhir-settings.json` file. 
 
 We will use this file to specify the authentication details for NZHTS. 
 
@@ -30,9 +30,9 @@ By default the location of this file is located at:
 * __Windows__: `C:\Users\<username>\.fhir\fhir-settings.json`
 * __Unix/Linux/Mac__: `/~/.fhir/fhir-settings.json` 
 
-Full fhir-settings.json documentation here: https://confluence.hl7.org/spaces/FHIR/pages/161072808/Using+fhir-settings.json
+Full `fhir-settings.json` documentation here: https://confluence.hl7.org/spaces/FHIR/pages/161072808/Using+fhir-settings.json
 
-You'll neeed to add the following lines, and populate the "token" with a valid bearer token. 
+You'll neeed to add the following lines, and populate the token with a valid bearer token. 
 
 ````json
 {
