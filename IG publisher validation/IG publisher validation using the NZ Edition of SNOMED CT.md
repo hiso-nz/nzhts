@@ -66,3 +66,5 @@ To ensure codes with a system of `http://snomed.info/sct` are validated against 
 ````
 
 #### 3. Validate NZ edition terminology in your IG
+
+After running the IG publisher the file `/your-ig/output/qa-txservers.html` is generated which provides a report on which terminology servers were used while generating the IG.
