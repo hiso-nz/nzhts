@@ -1,10 +1,10 @@
 # Overview
 
-The following guide describes how to validate terminology in the NZ Edition of SNOMED when building FHIR Implementation Guides (IGs) using the [HL7 java FHIR IG Publisher](https://github.com/HL7/fhir-ig-publisher).
+This guide describes how to validate terminology from the NZ Edition of SNOMED when building FHIR Implementation Guides (IGs) using the [HL7 java FHIR IG Publisher](https://github.com/HL7/fhir-ig-publisher).
 
 NZHTS has been registered as the authoritative server the IG publisher will use for validating the NZ edition of SNOMED (see [FHIR tx registry docs](https://github.com/FHIR/ig-registry/blob/master/tx-registry-doco.md) for more on how this works - this isn't required for validating codes though, only provided for context). 
 
-This means that once you configure your IG/IG publisher, you should be able to include codes from the NZ Edition of SNOMED CT in resources within an IG, then during the build/validation process, the IG Publisher will route validation requests to NZHTS instead of trying to validate against the international edition (and failing / returning a not found error).
+This means that once you configure your IG & the IG publisher, you should be able to include codes from the NZ Edition of SNOMED CT in resources within the IG, then during the build/validation process, the IG Publisher will route validation requests to NZHTS instead of trying to validate against the international edition (and failing / returning a not found error).
 
 # Prerequisites
 
