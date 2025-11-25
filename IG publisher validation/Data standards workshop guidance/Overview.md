@@ -3,8 +3,8 @@ aka **Don’t Let Your IG Burn Down: Validating the SNOMED NZ Edition with the I
 
 This track will provide:
 - a very brief overview of the FHIR terminology ecosystem (below on this page)
-- an example IG to update to get validation working using an authoritative server as an exercise.  Link: 
-- a working example (solution). Link: 
+- an example IG to update to get validation working using an authoritative server as an exercise (see exercise section below)
+- a working example (solution also below) 
 
 ## The FHIR Terminology Ecosystem Framework
 
@@ -14,7 +14,7 @@ When the IG Publisher needs to validate codes, it queries the coordination serve
 
 ### Coordination server background processes to scan registry
 
-Note that currently the tx server registry is manually updated by contributors adding their servers and HL7 (Mostly Graham managing/approving)
+Note that currently the tx server registry is manually updated by contributors adding their servers and HL7 (Mostly Grahame managing/approving)
 
 ```mermaid
 sequenceDiagram
@@ -54,3 +54,8 @@ sequenceDiagram
     IG->>TS: $validate-code request (code and system)
     TS-->>IG: response (code valid or invalid)
 ```
+
+### Exercise:
+
+Exercise IG to update: [link]
+Solution: [link]
