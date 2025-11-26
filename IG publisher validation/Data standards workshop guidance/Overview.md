@@ -3,7 +3,7 @@ aka **Don’t Let Your IG Burn Down: Validating the SNOMED NZ Edition with the I
 
 This track will provide:
 - a very brief overview of the FHIR terminology ecosystem (below on this page)
-- an example IG using an exp-params.json to ensure a specific authoritative server is used 
+- example exp-params.json to ensure a specific authoritative server is used 
 - guidance on how to use NZHTS for validation of SNOMED NZ edition
 
 ## The FHIR Terminology Ecosystem Framework
