@@ -1,6 +1,8 @@
 # Data Standards Workshop: Using SNOMED national editions with the IG publisher 
 aka **Don’t Let Your IG Burn Down: Validating the SNOMED NZ Edition with the IG Publisher and NZHTS**
 
+[Teams meeting link - join here](https://aus01.safelinks.protection.outlook.com/ap/t-59584e83/?url=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4N2U5ZjEtZjRiNS00NmM2LWE3ZGEtNTNmNzJlNjUyYTA3%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522bed4da51-3cdb-4d0d-baf8-fb80d53268e3%2522%252c%2522Oid%2522%253a%252289c3ada7-b9ea-4d95-af07-1a380dde50b1%2522%257d&data=05%7C02%7CDaniel.Thomson%40TeWhatuOra.govt.nz%7Ce6003f2b1a6f40e3ef4e08de27cc9f65%7Cbed4da513cdb4d0dbaf8fb80d53268e3%7C0%7C0%7C638991956971350131%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=gVmu%2Bv65%2BT6MjXTTKJ4NZZUdfNndWxb8Qk6U86mEjOs%3D&reserved=0)
+
 This track will provide:
 - a very brief overview of the FHIR terminology ecosystem (below on this page)
 - example exp-params.json to ensure a specific authoritative server is used 
