@@ -16,7 +16,7 @@ When the IG Publisher needs to validate codes, it queries the coordination serve
 
 ### Coordination server background processes to scan registry
 
-The diagrams below sumamrise the processes described in the [ecosystem documentation](https://hl7.org/fhir/uv/tx-ecosystem/ecosystem.html). Note that currently the tx server registry is manually updated to add servers by contributors adding their own and HL7 (Mostly Grahame managing/approving).
+The diagrams below sumamrise the processes described in the [ecosystem documentation](https://hl7.org/fhir/uv/tx-ecosystem/ecosystem.html), by which the coordination server discovers the terminology servers and content available, and routes IG publisher queries to the appropriate place. Note that currently the tx server registry is manually updated to add servers by contributors adding their own and HL7 (Mostly Grahame managing/approving).
 
 ```mermaid
 sequenceDiagram
@@ -80,8 +80,5 @@ To avoid this ambiguity in a FHIR IG, you can define the edition to use, by prov
   ]
 }
 ````
+Full instructions of how you will be able to validate the NZ edition of SNOMED using the IG publisher and NZHTS [are available here](https://github.com/hiso-nz/nzhts/blob/main/IG%20publisher%20validation/IG%20publisher%20validation%20using%20the%20NZ%20Edition%20of%20SNOMED%20CT.md). 
 
-
-### Example IG
-
-Link:
