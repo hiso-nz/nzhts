@@ -50,6 +50,8 @@ Note that the token is the bearer token itself and this means it will expire. NZ
 
 #### 2. Add an `exp-params.json` to your IG
 
+Given the way SNOMED implicit valuesets are defined, a code can only be checked against that ValueSet if the ValueSet has an explicit reference to the edition and version otherwise the behaviour may vary as the server used for validation cannot be guaranteed. 
+
 To ensure codes with a system of `http://snomed.info/sct` are validated against the NZ edition in your IG, you need to add a parameters resource in your IG's folder structure with the following location/name of:  `input/_resources/exp-params.json`
 
 ````json
@@ -67,4 +69,4 @@ To ensure codes with a system of `http://snomed.info/sct` are validated against 
 
 #### 3. Validate NZ edition terminology in your IG
 
-After running the IG publisher the file `/your-ig/output/qa-txservers.html` is generated which provides a report on which terminology servers were used while generating the IG.
+After running the IG publisher the file `/your-ig/output/qa-txservers.html` is generated which provides a report on which terminology servers were used while generating the IG. You can use this to confirm what the IG publisher is using for each code in the IG. 

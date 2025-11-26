@@ -3,8 +3,8 @@ aka **Don’t Let Your IG Burn Down: Validating the SNOMED NZ Edition with the I
 
 This track will provide:
 - a very brief overview of the FHIR terminology ecosystem (below on this page)
-- an example IG to update to get validation working using an authoritative server as an exercise (see exercise section below)
-- a working example (solution also below) 
+- an example IG using an exp-params.json to ensure a specific authoritative server is used 
+- guidance on how to use NZHTS for validation of SNOMED NZ edition
 
 ## The FHIR Terminology Ecosystem Framework
 
@@ -55,7 +55,9 @@ sequenceDiagram
     TS-->>IG: response (code valid or invalid)
 ```
 
-### Exercise:
+### Specifying a SNOMED edition for resolution of implicit SNOMED ValueSets in an IG
 
-Exercise IG to update: [link]
-Solution: [link]
+
+### Example IG
+
+Link:
